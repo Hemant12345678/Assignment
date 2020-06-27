@@ -1,0 +1,44 @@
+<h1 class="text-center">Register</h1>
+<div class="row my-3">
+  <div class="col-sm-6 offset-sm-3">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        class="form-control"
+        id="username"
+        [value]="username"
+        (input)="username = $event.target.value"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        [value]="password"
+        (input)="password = $event.target.value"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Date of Birth</label>
+      <input
+        type="text"
+        class="form-control"
+        id="dob"
+        [value]="dob"
+        (input)="dob = $event.target.value"
+      />
+    </div>
+    <div class="row">
+      <button class="btn btn-primary mb-2" (click)="register()">
+        Register
+      </button>
+      <a class="btn btn-primary mb-2 ml-auto" routerLink="/">
+        Login
+      </a>
+    </div>
+  </div>
+</div>

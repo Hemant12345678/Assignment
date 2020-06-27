@@ -1,0 +1,13 @@
+<div class="card my-3">
+  <img class="card-img-top" src="{{ blog.image_url }}" alt="Card image cap" />
+  <div class="card-body">
+    <h5 class="card-title">{{ blog.title }}</h5>
+    <p class="card-text">
+      {{ blog.description }}.<a
+        routerLink="/main/viewBlog/{{ blog._id }}"
+        class="ml-2"
+        >Read More</a
+      >
+    </p>
+  </div>
+</div>

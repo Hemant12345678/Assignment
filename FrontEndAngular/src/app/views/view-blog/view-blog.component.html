@@ -1,0 +1,27 @@
+<div class="row my-3">
+  <div class="col-sm-8">
+    <div class="jumbotron">
+      <h1 class="display-4">{{ title }}</h1>
+      <p class="lead">
+        {{ description }}
+      </p>
+      <hr class="my-4" />
+
+      <div class="row">
+        <a
+          class="btn btn-primary btn-lg"
+          routerLink="/main/editBlog/{{ blogId }}"
+          >Edit</a
+        ><button
+          class="btn btn-danger btn-lg ml-auto"
+          (click)="deleteBlog(blogId)"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <img class="card-img-top" src="{{ image_url }}" alt="Card image cap" />
+  </div>
+</div>

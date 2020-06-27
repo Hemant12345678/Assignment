@@ -1,0 +1,7 @@
+<div class="row" *ngIf="blogs.length; else elseBlock">
+  <div class="col-sm-4" *ngFor="let blog of blogs; index as i">
+    <app-blog [blog]="blog"></app-blog>
+  </div>
+</div>
+
+<ng-template #elseBlock>Loading Data.</ng-template>
